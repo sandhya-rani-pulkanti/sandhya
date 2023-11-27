@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>website</title>
 </head>
 <body>
-  <p>hello we are bts</p>  
+    <header>
+        <h4>Student Resgistration form</h4>
+    </header>
+    <main>
+        <form action="action.php">
+           <p>First Name:     <input type="text" placeholder="enter your first name"> (Max 50 characters allowed) </p>  
+           <p> Last Name:    <input type="text" placeholder="enter your last name">(max 50 characters allowed)</p> 
+            <p>Email ID:      <input type="text"placeholder="enter email"></p>  
+            <p>Phone Number: <input type="number" placeholder="phone number">(10 digits allowed)</p> 
+            <p> Gender:        
+            <label for="1">
+                <input type="radio" name="gender" value="Male"id="1">Male
+            </label>
+            <label for="2">
+                <input type="radio" name="gender" value="Female" id="2">Female
+            </label>
+            </p>  
+           <p>
+                Date of Birth(DOB):
+                <select name="day" value ="day"id="7">
+                    <option value="day">Day</option>
+                </select>
+                <select name="month"value="month" id="8">
+                    <option value="month">Month</option>
+                </select>
+                <select name="year"value="year" id="9">
+                    <option value="year">Year</option>
+                </select>
+            </p>  
+            <p>Address:    </p>  
+                <textarea name="address" id="" cols="30" rows="10">enter your address</textarea>
+                <p>City
+                    <input type="text"placeholder="city">(max 50 characters)
+                </p>   
+                 <p>Pin Code:
+                    <input type="number" placeholder="pin code">(max 6 numbers allowed)
+                </p> 
+               <p>State:
+                    <input type="text" placeholder="state">
+                </p> 
+               <p>Country:
+                    <input type="text" placeholder="country">
+                </p> 
+                <p>
+                    Qualification:</p>
+                    <input type="checkbox" name="high school" id="11">High School
+                    <input type="checkbox" name="intermediate" id="12">Intermediate
+                    <input type="checkbox" name="graduation" id="13">Graduation
+                    <input type="checkbox" name="masters" id="14">Masters 
+              <p>Course:
+                    <select name="courses" id="20">
+                        <option value="full stack">full stack</option>
+                     <option value="testing tools">testing tools</option>
+                     <option value="aws">aws</option>
+                     <option value="ai">ai</option>
+                    </select>
+                </p>  
+                <button>submit</button>
+                <button>cancel</button>
+            
+        </form>
+    </main>
 </body>
 </html>
